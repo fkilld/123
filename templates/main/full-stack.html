@@ -1,0 +1,993 @@
+<!doctype html> 
+{% load static %}
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="Html, Css, java, python,best class in raipur for python, full stack developer salary in india,accenture full stack web developer salary,cooding classes,python classes,full stack developer course,
+    full stack developer,what is full stack developer,ull stack developer meaning,java full stack developer,full stack developer salary,software developer,software developer salary,it courses,
+    frfront end developeront end developer,front end developer skills,front end developer jobs,graphic design,graphic design courses,
+    programming languages,top programming languages,web development company,web development courses,web development services,python web development
+    ">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="css/full-stack-developers.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/logo/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/logo/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/logo/favicon-16x16.png' %}">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="{% static 'css/full-stack.css' %}" rel="stylesheet">
+     <link href="{% static 'css/full-stack-developers.css' %}" rel="stylesheet">
+   <style>
+        @media all and (min-width: 992px) {
+            .navbar .nav-item .dropdown-menu {
+                display: block;
+                opacity: 0;
+                visibility: hidden;
+                transition: .3s;
+                margin-top: 0;
+            }
+
+            .navbar .nav-item:hover .nav-link {
+                color: #fff;
+            }
+
+            .navbar .dropdown-menu.fade-down {
+                top: 80%;
+                transform: rotateX(-75deg);
+                transform-origin: 0% 0%;
+            }
+
+            .navbar .dropdown-menu.fade-up {
+                top: 180%;
+            }
+
+            .navbar .nav-item:hover .dropdown-menu {
+                transition: .3s;
+                opacity: 1;
+                visibility: visible;
+                top: 60px;
+                transform: rotateX(0deg);
+            }
+        }
+
+        .dropdown-menu {
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+
+    .banner {
+  position: relative;
+  width:100%;
+  margin: 0 auto;
+}
+
+.banner img {vertical-align: middle;}
+
+.banner .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  height:100%;
+  padding: 20px;
+}
+@media screen and (max-width: 770px) {
+    .pos1 {
+        display: none;
+        position: absolute;
+  bottom:0px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  height:100%;
+  padding: 20px;
+    }
+}
+ .box-content
+        {
+            background-color:white;
+            margin: 2%;
+            padding: 2%;
+          box-shadow: 1px 2px 21px 0px rgba(0,0,0,0.43);
+-webkit-box-shadow: 1px 2px 21px 0px rgba(0,0,0,0.43);
+-moz-box-shadow: 1px 2px 21px 0px rgba(0,0,0,0.43);
+        }
+    </style>
+</head>
+
+<body>
+<div style="background-color:#f9f9fa;">
+
+<div class="fixed-top">
+    <nav class="navbar navbar-expand-lg nav Style">
+        <a class="brand-navbar" href="{% url 'index' %}"><img alt="Responsive image" height="50px" src="{% static 'img/logo.jpg' %}"></a>
+<img alt="Responsive image" height="50px" src="{% static 'img/crampetelogo.jpg' %}" style="margin-left:4px;">
+        <button class="navbar-toggler" data-target="#mainMenu" data-toggle="collapse">
+            <span><i class="fas fa-align-right iconStyle"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ml-auto navList">
+                <li class="nav-item active"><a class="nav-link" href="{% url 'index' %}"><i class="fas fa-home"></i>HOME<span
+                        class="sr-only">(current)</span></a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}"><i class="fas fa-users"></i>Who We Are</a>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i
+                            class="fas fa-cogs"></i>Services</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="{% url 'software_deve' %}">Software Development</a></li>
+                        <li><a class="dropdown-item" href="{% url 'tap' %}">Training and Placement</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Digital_Marketing' %}">Digital Marketing</a></li>
+                       
+                        <li><a class="dropdown-item" href="{% url 'training' %}">Campus Recruitment Crash
+                            Courses</a></li>
+                        <!--<li><a class="dropdown-item" href="{% url 'Recruitments' %}">Recruitment</a></li>-->
+                        <!--<li>-->
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{% url 'Courses' %}"><i class="fas fa-atom"></i>Courses</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="{% url 'full_stack' %}">Full Stack Development with
+                            Crampete</a>
+                        </li>
+                        <!--<li><a class="dropdown-item" href="{% url 'Data_science' %}">Data science</a></li>-->
+                        <li><a class="dropdown-item" href="{% url 'Digital_Market' %}">Digital Marketing</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Crash_Course' %}">Crash Course</a></li>
+                        <!-- <li><a class="dropdown-item" href="{% url 'Aptitude_Reasoning' %}">Aptitude Reasoning</a></li>
+                        <li><a class="dropdown-item" href=" {% url 'Profile_Preparation' %} ">Profile Preparation</a></li> -->
+                        <!-- <li><a class="dropdown-item" href="{% url 'CV_Building' %} ">CV Building</a></li> -->
+                        <li><a class="dropdown-item" href="{% url 'Mock_Interviews' %} ">Mock Interviews</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="{% url 'ongoing' %}"><i class="fas fa-user-tie"></i>Ongoing
+                        Recruitments</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'clients' %}"><i class="fas fa-briefcase"></i>Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}"><i class="fas fa-phone"></i>Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" href="#"><i
+                            class="fas fa-cogs"></i>More</a>
+
+                    <ul class="dropdown-menu fade-up">
+                        <li><a class="dropdown-item" href="#">Pay Online</a></li>
+                        <li><a class="dropdown-item" href="#">Book Online</a></li>
+                        <!-- <li><a class="dropdown-item" href="Digital-Marketing.html">Digital Marketing</a></li> -->
+
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<section style="margin-top:4%">
+    <div class="container-fixed banner">
+        
+
+            <img class="img-fluid img1" src="{% static 'img/FISD.png' %}">
+            <div class="content">
+                <h1 class="pos1" style="margin-top:10%">Full Stack Development</h1>
+              <!--   <p class="pos2" style="text-align: center;">Full Stack Development</p>
+ -->                <p class="pos1" style="margin-left: 30%; margin-right: 30%;text-align: justify;">Full stack development: It refers to the
+                    development of both front end(client side) and back end(server side) portions of web application.
+
+                    Full stack web Developers: Full stack web developers have the ability to design complete web
+                    application and websites. They work on the frontend, backend, database and debugging of web
+                    application or websites</p>
+            </div>
+        
+    </div>
+
+
+</section>
+
+<section style="background-color:#f9f9fa;">
+
+    <div class="container-fluid">
+        <div class="row">
+             <div class="col-sm-12 col-lg-6 col-md-12 col-xl-6">
+               
+
+                <div class="page-content page-container" id="page-content">
+                    <div class="padding">
+
+
+                        <div class="timeline p-4 block mb-4">
+                            <p class="font-weight-bold" style="font-size:30px;">Complete Course Syllabus</p>
+                            <div class="tl-item active">
+                                <div class="tl-dot b-warning"></div>
+                                <div class="tl-content">
+                                    <div class="font-weight-bold">Introduction to the course</div>
+
+                                </div>
+                            </div>
+                            <div class="tl-item">
+                                <div class="tl-dot b-primary"></div>
+                                <div class="tl-content">
+                                    <div class="font-weight-bold">HTML & CSS</div>
+                                    <p class="text-muted" style="font-size:13px;">HTML5, CSS, Responsive Websites using
+                                        Media Queries and Bootstrap
+                                        framework.</p>
+
+
+                                </div>
+                            </div>
+                            <div class="tl-item">
+                                <div class="tl-dot b-danger"></div>
+                                <div class="tl-content">
+                                    <div class="font-weight-bold">JavaScript & ReactJS</div>
+
+                                    <p class="text-muted" style="font-size:13px;">Basics of Programming Languages,
+                                        JavaScript, Puzzles, Understanding the
+                                        DOM, AJAX Calls and ReactJS.</p>
+
+
+                                </div>
+                            </div>
+                            <div class="tl-item">
+                                <div class="tl-dot b-danger"></div>
+                                <div class="tl-content">
+                                    <div class="font-weight-bold">Backend Programming</div>
+                                    <p class="text-muted" style="font-size:13px;">Node Js, Understanding HTTP and REST
+                                        APIs. Writing your own REST APIs using
+                                        Express. Connecting an Express Server
+                                        with Mongo DB.
+                                    </p>
+
+
+                                </div>
+                            </div>
+                            <div class="tl-item">
+                                <div class="tl-dot b-warning"></div>
+                                <div class="tl-content">
+                                    <div class="font-weight-bold">Database</div>
+                                    <p class="text-muted" style="font-size:13px;">Using MongoDB to store and read data.
+                                        Writing queries to get data, using a
+                                        Command Line to access Mongo DB.
+                                        Creating a cluster and accessing it via a
+                                        GUI (graphical user interface).</p>
+
+
+                                </div>
+                            </div>
+                            <div class="tl-item">
+                                <div class="tl-dot b-primary"></div>
+                                <div class="tl-content">
+                                    <div class="font-weight-bold">Version Control Software</div>
+
+                                    <p class="text-muted" style="font-size:13px;">Learn how to collaborate and version
+                                        source code using Git and Github.</p>
+
+
+                                </div>
+                            </div>
+                            <div class="tl-item">
+                                <div class="tl-dot b-primary"></div>
+                                <div class="tl-content">
+                                    <div class="font-weight-bold">Free Python Training with 
+                                        Django Framework</div>
+
+                                    <p class="text-muted" style="font-size:13px;">
+                                        <ul class="text-muted">
+                                        <li>Learn the power of Python to code out your web applications</li>
+                                       <li>Create a fully functional web site using the Full-Stack with Django</li> 
+                                        <li>Implement a full Models-Views-Templates structure for your site</li>
+                                    </ul>
+                                    </p>
+
+
+                                </div>
+                            </div>
+                            <div class="tl-item">
+                                <div class="tl-dot b-warning"></div>
+                                <div class="tl-content">
+                                    <div class="font-weight-bold">Personality Development</div>
+
+                                    <p class="text-muted" style="font-size:13px;">
+                                        
+                                    </p>
+
+
+                                </div>
+                            </div>
+                            <div class="tl-item">
+                                <div class="tl-dot b-primary"></div>
+                                <div class="tl-content">
+                                    <div class="font-weight-bold">Capstone Project</div>
+
+                                    <p class="text-muted" style="font-size:13px;">
+                                        
+                                    </p>
+
+
+                                </div>
+                            </div>
+                            <div class="tl-item">
+                                <div class="tl-dot b-primary"></div>
+                                <div class="tl-content">
+                                    <button class="btn btn-primary" type="submit" value="submit"><a href="{% static 'pdf/full stack.pdf' %}"
+                                        style="color:white; text-decoration: none;">Download
+                                     Brochure</a></button>
+
+
+                                </div>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" >
+               <div style="margin-top:5%"> 
+                <img class="img-fluid" src="{% static 'img/crampete.png' %}">
+               </div>
+               <div> 
+                
+
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+
+                    <div class="row text-center">
+                        <div class="col demo-section" style="margin-top:20%;">
+                            <div class="counter">
+                                <i class="fa fa-business-time fa-2x"></i>
+    
+                                <p class="count-text font-weight-bold" style="font-size:30px;"> Program Duration<br>
+                                5 Month<br>Monday to Saturday</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                   <!--  <div class="row text-center">
+                        <div class="col">
+                            <div class="counter">
+                                <i class="fa fa-calendar-alt fa-2x"></i>
+                                <h2 class="timer count-title count-number" data-speed="1500" data-to="4"></h2>
+                                <p class="count-text font-weight-bold" style="font-size:30px;">MONTHS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div class="row text-center">
+                        <div class="col">
+                            <div class="counter">
+                                <i class="fa fa-calendar-week fa-2x"></i>
+                                <h2 class="timer count-title count-number" data-speed="1500" data-to="16"></h2>
+                                <p class="count-text font-weight-bold" style="font-size:30px;">WEEKS</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <br>
+    
+                    <div class="row text-center">
+                        <div class="col">
+                            <div class="counter">
+                                <i class="fa fa-clock fa-2x"></i>
+                                <h2 class="timer count-title count-number" data-speed="1500" data-to="3"></h2>
+                                <p class="count-text font-weight-bold" style="font-size:30px;">HOURS PER DAY MONDAY TO
+                                    SATURDAY <BR> OFFLINE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <BR>
+                    <div class="row text-center">
+                        <div class="col">
+                            <div class="counter">
+                                <i class="fa fa-clock fa-2x"></i>
+                                <h2 class="timer count-title count-number" data-speed="1500" data-to="2"></h2>
+                                <p class="count-text font-weight-bold" style="font-size:30px;">HOURS PER DAY SATURDAY AND
+                                    SUNDAY <BR> ONLINE</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <br>
+    
+    
+                </div>
+    
+            </div>
+        </div> -->
+
+
+
+               </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+</section>
+
+
+
+<section style="background-color:#f9f9fa;">
+    <!--<h1 style="text-align: center;">UPCOMING ONLINE CLASS</h1>-->
+    <br>
+    <!--<div class="container">-->
+    <!--    <div class="row">-->
+    <!--        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">-->
+    <!--            <div class="box-content">-->
+    <!--                <br>-->
+    <!--                <h4 style="font-weight: bold;text-align: center;">UPCOMING OFFLINE CLASS</h4><br>-->
+    <!--                    <p style="text-align: center;color:black;">March 8th, 2021-->
+    <!--                             </p>-->
+
+    <!--                   <br>-->
+    <!--                   <h5 style="color:blue;text-align: center;font-weight: bold;">Admission Deadline: March 7th, 2021</h5>-->
+    <!--                   <br>-->
+    <!--                    <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-whatever="@fat" class="btn btn-outline-primary">Enrol Now</button></center>-->
+    <!--                   <br>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">-->
+    <!--            <div class="box-content">-->
+    <!--                <br>-->
+    <!--                <h4 style="font-weight: bold;text-align: center;">UPCOMING OFFLINE CLASS</h4><br>-->
+    <!--                    <p style="text-align: center;color:black;">March 20th, 2021-->
+    <!--                        Evening Batch (Raipur Chhattisharh)</p>-->
+
+    <!--                   <br>-->
+    <!--                   <h5 style="color:blue;text-align: center;font-weight: bold;">Admission Deadline: January 22nd, 2021</h5>-->
+    <!--                   <br>-->
+    <!--                    <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-whatever="@fat" class="btn btn-outline-primary">Enrol Now</button></center>-->
+    <!--                   <br>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">-->
+    <!--            <div class="box-content">-->
+    <!--                <br>-->
+    <!--                <h4 style="font-weight: bold;text-align: center;">UPCOMING OFFLINE CLASS</h4><br>-->
+    <!--                    <p style="text-align: center;color:black;">April 2nd, 2021-->
+    <!--                        Evening Batch (Raipur Chhattisharh)</p>-->
+
+    <!--                   <br>-->
+    <!--                   <h5 style="color:blue;text-align: center;font-weight: bold;">Admission Deadline: January 22nd, 2021</h5>-->
+    <!--                   <br>-->
+    <!--                   <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-whatever="@fat" class="btn btn-outline-primary">Enrol Now</button></center>-->
+    <!--                   <br>-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+    <!--    </div>-->
+    <!--</div> -->
+
+
+
+    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal1" role="dialog"
+    tabindex="-1">
+   <div class="modal-dialog" role="document">
+       <div class="modal-content">
+           <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Register Today</h5>
+               <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                   <span aria-hidden="true">&times;</span>
+               </button>
+           </div>
+           <div class="modal-body">
+               <form action="#" class="form-horizontal worldForm" method="post">
+               {% csrf_token %}
+                  
+                   <div class="form-group">
+                       <label>Name</label>
+                       <input class="form-control" name="fname" placeholder="Name" required
+                              type="text">
+                   </div>
+                   <!--<div class="form-group">-->
+                   <!--    <label>Last Name</label>-->
+                   <!--    <input class="form-control" name="last_name" placeholder="Last Name" required-->
+                   <!--           type="text">-->
+                   <!--</div>-->
+                   <div class="form-group">
+                       <label>Email</label>
+                       <input class="form-control" name="femails" placeholder="Email" required type="email">
+                   </div>
+                   <div class="form-group">
+                       <label>Phone Number</label>
+                       <input class="form-control" name="fphones" placeholder="Phone Number"
+                              required type="telephone">
+                   </div>
+
+
+                   <div class="form-group">
+                       <label>College Pass Out/Year</label>
+                       <input class="form-control" name="passout"
+                              placeholder="College Pass Out/Year"
+                              type="text" required>
+                   </div>
+
+
+                   <!-- <div class="form-group">-->
+                   <!-- <label>College Pass Out Year/Fresher/School</label>-->
+                   <!-- <select class="form-control" id="countrySelect" size="1" onchange="makeSubmenu(this.value)">-->
+                   <!-- <option value="" disabled selected></option>-->
+                   <!-- <option>College</option>-->
+                   <!-- <option>School</option>-->
+                   <!-- <option>Experience</option>-->
+                   <!-- <option>Fresher</option>-->
+                   <!-- </select>-->
+                   <!--</div>-->
+
+                   <!--<div class="form-group">-->
+                   <!-- <label>College Pass Out Year/Fresher/School</label>-->
+                   <!-- <select class="form-control" id="citySelect" size="1">-->
+
+                   <!-- </select>-->
+                   <!--</div> -->
+                   <!--<div class="form-group">-->
+                   <!--    <label>Stream</label>-->
+
+                   <!--    <select class="form-control" name="stream">-->
+                   <!--        <option value="bsc">BSc</option>-->
+                   <!--        <option value="mba">MBA</option>-->
+                   <!--        <option value="mba">BE/BTech, IT</option>-->
+                   <!--        <option value="mba">BE/BTech Computer</option>-->
+                   <!--        <option value="mba">BE/BTech Civil</option>-->
+                   <!--        <option value="mba">BE/BTech Mechanical</option>-->
+                   <!--        <option value="mba">BE/BTech Electronics</option>-->
+                   <!--        <option value="mba">BE/BTech ENT</option>-->
+                   <!--        <option value="mba">BCom</option>-->
+                   <!--        <option value="mba">MCA</option>-->
+                   <!--        <option value="mba">Career Counselling</option>-->
+                   <!--        <option value="mba">6 to 10 std.</option>-->
+                   <!--        <option value="mba">Other</option>-->
+                   <!--    </select>-->
+                   <!--</div>-->
+
+                    <!--<div class="form-group">-->
+                    <!-- <label>College Pass Out Year/Fresher/School</label>-->
+                    <!-- <select class="form-control" id="countrySelect" size="1" onchange="makeSubmenu(this.value)">-->
+                    <!-- <option value=""disabled selected></option>-->
+                    <!-- <option>Chhatisgarh</option>-->
+                    <!-- <option></option>-->
+                    <!-- <option></option>-->
+                    <!-- <option></option>-->
+                    <!-- </select>-->
+                    <!--</div>-->
+
+                    <!--<div class="form-group">-->
+                    <!-- <label>College Pass Out Year/Fresher/School</label>-->
+                    <!-- <select class="form-control" id="citySelect" size="1">-->
+
+                    <!-- </select>-->
+                    <!--</div>-->
+
+
+                 <!--<div class="form-group">-->
+                 <!--    <label>City</label>-->
+                 <!--    <select class="form-control" name="city" id="cityList">-->
+                 <!--        <option value="" selected="selected">Select State</option>-->
+                 <!--    </select>-->
+                 <!--</div>-->
+
+                 <!-- -->
+                   <div class="form-group">
+                       <label>City</label>
+                       <input class="form-control" name="city" placeholder="City" type="text" required>
+                   </div>
+                   
+                   
+                   <div class="form-group">
+                    <label>Class</label>
+                    <select class="form-control" id="countrySelect" name="classes" size="1" onchange="makeSubmenu(this.value)"  required>
+                    <option value="" disabled selected></option>
+                    <option value="bsc">OFFLINE CLASS</option>
+                    <option value="mba">ONLINE CLASS</option>
+                    
+                   
+                    </select>
+                   </div> 
+                   
+                <!--   <div class="form-group">-->
+                <!--    <label>Class</label>-->
+
+                <!--    <select class="form-control" name="stream" required>-->
+                    
+                <!--        <option value="bsc">OFFLINE CLASS</option>-->
+                <!--        <option value="mba">ONLINE CLASS</option>-->
+                <!--    </select>-->
+                <!--</div>-->
+                
+                 <div class="form-group">
+                    <label>Upcoming Batch</label>
+                    <select class="form-control" name="upcomingBatch" id="countrySelect" size="1" onchange="makeSubmenu(this.value)"  required>
+                    <option value="" disabled selected></option>
+                    <option>8/03/2021</option>
+                    <option>22/03/2021</option>
+                    <option>12/04/2021</option>
+                   
+                    </select>
+                   </div>
+
+                   <div class="form-group">
+                       <label>Comment</label>
+                       <input class="form-control" name="comment" placeholder="Comments..." type="text" required>
+                   </div>
+
+
+                   <button class="btn btn-primary signup">Register Now</button>
+               </form>
+
+           </div>
+       </div>
+   </div>
+</div>
+
+</section>
+
+     <section style="background-color:#f9f9fa; margin-top: 5%;">
+    <h1 style="text-align: center;">UPCOMING OFFLINE CLASS</h1>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class="box-content">
+                    <br>
+                    <h4 style="font-weight: bold;text-align: center;">UPCOMING OFFLINE CLASS</h4><br>
+                        <p style="text-align: center;color:black;">March 8th, 2021
+                                 (Raipur Chhattisharh)</p>
+
+                       <br>
+                       <h5 style="color:blue;text-align: center;font-weight: bold;">Admission Deadline: March 7th, 2021</h5>
+                       <br>
+                        <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-whatever="@fat" class="btn btn-outline-primary">Enroll Now</button></center>
+                        <!--<center><a  class="btn btn-outline-primary" href="{% url 'tap' %}" role="button">Enroll Now</a></center>-->
+                       <br>
+                </div>
+            </div>
+             <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class="box-content">
+                    <br>
+                    <h4 style="font-weight: bold;text-align: center;">UPCOMING OFFLINE CLASS</h4><br>
+                        <p style="text-align: center;color:black;">March 22, 2021
+                            (Raipur Chhattisharh)</p>
+
+                       <br>
+                       <h5 style="color:blue;text-align: center;font-weight: bold;">Admission Deadline: March 21, 2021</h5>
+                       <br>
+                        <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-whatever="@fat" class="btn btn-outline-primary">Enroll Now</button></center>
+                        <!--<center><a  class="btn btn-outline-primary" href="{% url 'tap' %}" role="button">Enroll Now</a></center>-->
+                       <br>
+                </div>
+            </div>
+             <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class="box-content">
+                    <br>
+                    <h4 style="font-weight: bold;text-align: center;">UPCOMING OFFLINE CLASS</h4><br>
+                        <p style="text-align: center;color:black;">April 12th, 2021
+                            (Raipur Chhattisharh)</p>
+
+                       <br>
+                       <h5 style="color:blue;text-align: center;font-weight: bold;">Admission Deadline: April 11, 2021</h5>
+                       <br>
+                       <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-whatever="@fat" class="btn btn-outline-primary">Enroll Now</button></center>
+                        <!--<center><a  class="btn btn-outline-primary" href="{% url 'tap' %}" role="button">Enroll Now</a></center>-->
+                       <br>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section style="margin-top: 5%;">
+    <br>
+    <h1></h1>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <iframe width="350px" height="315" src="https://www.youtube.com/embed/ylBTPsESVhU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <iframe width="350px" height="315" src="https://www.youtube.com/embed/S7gZADsf_ys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <iframe width="350px" height="315" src="https://www.youtube.com/embed/PSmy_qlgTI4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+        </div>
+    </div>
+</section>
+<br><br><br><br>
+</div>
+<!--footer-->
+<section class="demo-footer">
+
+    <footer>
+
+        <div class="container-fluid" style="background-color:rgba(0, 0, 0, 0.7)">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 ">
+                    <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 " style="margin-top:70px;">
+
+
+                        <img src="{% static 'img/logo.jpg' %}" width="250">
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 class="top-margin" style="color:white;margin-top: 4%">Contact</h2>
+                    <hr class="hr-tag" style="height:2px;border-width:0;color:gray;background-color:gray">
+                    <div class="">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text" style="text-align:center; color: white;">First Floor, House Board Commercial<br>Complex, Maulshri Vihar, Near VIP Road,Raipur (C.G.) -492006</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text" style="text-align:center; color: white;">07714041616</span>
+                        </div>
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text" style="text-align:center; color: white;">info@anionstech.com</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 style="color:white;margin-top: 4%"
+                        style="height:2px;border-width:0;color:gray;background-color:gray">Opening Hours</h2>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                    <p style="color: white"> Monday to Sunday - 10am to 6pm</p>
+
+                  
+
+
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 col-xs-12 top-margin">
+                    <h2 style="color:white;margin-top: 4%">Map</h2>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                    <div class="content">
+
+                        <iframe allowfullscreen="" aria-hidden="false" frameborder="0" height="auto"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.7810682577572!2d81.69984930586462!3d21.20954632009619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c33030e9b60f%3A0x84d09e54f1b37a21!2sAnion%20Softech%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1609041632180!5m2!1sen!2sin"
+                                style="border:0;" tabindex="0" width="auto"></iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="container-fluid" style="background-color:black;">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="social">
+                            <a href="https://www.facebook.com/AnionStech/">
+                                <p class="social-font"><span class="fab fa-facebook-square"></span></p>
+                            </a>
+                            <a href="https://linkedin.com/in/anion-softech-2707081a2">
+                                <p class="social-font"><span class="fab fa-linkedin"></span></p>
+                            </a>
+                            <a href="https://instagram.com/anion_softech?igshid=110myfr4rra4i">
+                                <p class="social-font">
+                                    <span class="fab fa-instagram"></span></p>
+                            </a>
+                            <a href="https://youtube.com/channel/UCRTBQGAlBv1cNUaODhxx-4A">
+                                <p class="social-font"><span class="fab fa-youtube"></span></p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 demo21">
+                        <h6 style="color: white;margin-top:5%;margin-left:50%;">@ 2020 Anion Softech .All Rights
+                            Reserved.
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+</section>
+
+
+<section>
+
+
+    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="col-form-label" for="recipient-name">NAME:</label>
+                            <input class="form-control" id="recipient-name" placeholder="Name" required type="text">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="recipient-name">EMAIL:</label>
+                            <input class="form-control" id="recipient-name" placeholder="Email" required type="email">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="recipient-name">PHONE NUMBER:</label>
+                            <input class="form-control" id="recipient-name" placeholder="Phone Number" required
+                                   type="tel">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="recipient-name">COLLEGE NAME:</label>
+                            <input class="form-control" id="recipient-name" placeholder="College Name" required
+                                   type="text">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+                    <button class="btn btn-primary" type="button">Pay Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script crossorigin="anonymous"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+</script>
+<script crossorigin="anonymous"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<script>
+    (function ($) {
+        $.fn.countTo = function (options) {
+            options = options || {};
+
+            return $(this).each(function () {
+                // set options for current element
+                var settings = $.extend({}, $.fn.countTo.defaults, {
+                    from: $(this).data('from'),
+                    to: $(this).data('to'),
+                    speed: $(this).data('speed'),
+                    refreshInterval: $(this).data('refresh-interval'),
+                    decimals: $(this).data('decimals')
+                }, options);
+
+                // how many times to update the value, and how much to increment the value on each update
+                var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                    increment = (settings.to - settings.from) / loops;
+
+                // references & variables that will change with each update
+                var self = this,
+                    $self = $(this),
+                    loopCount = 0,
+                    value = settings.from,
+                    data = $self.data('countTo') || {};
+
+                $self.data('countTo', data);
+
+                // if an existing interval can be found, clear it first
+                if (data.interval) {
+                    clearInterval(data.interval);
+                }
+                data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+                // initialize the element with the starting value
+                render(value);
+
+                function updateTimer() {
+                    value += increment;
+                    loopCount++;
+
+                    render(value);
+
+                    if (typeof (settings.onUpdate) == 'function') {
+                        settings.onUpdate.call(self, value);
+                    }
+
+                    if (loopCount >= loops) {
+                        // remove the interval
+                        $self.removeData('countTo');
+                        clearInterval(data.interval);
+                        value = settings.to;
+
+                        if (typeof (settings.onComplete) == 'function') {
+                            settings.onComplete.call(self, value);
+                        }
+                    }
+                }
+
+                function render(value) {
+                    var formattedValue = settings.formatter.call(self, value, settings);
+                    $self.html(formattedValue);
+                }
+            });
+        };
+
+        $.fn.countTo.defaults = {
+            from: 0,               // the number the element should start at
+            to: 0,                 // the number the element should end at
+            speed: 1000,           // how long it should take to count between the target numbers
+            refreshInterval: 100,  // how often the element should be updated
+            decimals: 0,           // the number of decimal places to show
+            formatter: formatter,  // handler for formatting the value before rendering
+            onUpdate: null,        // callback method for every time the element is updated
+            onComplete: null       // callback method for when the element finishes updating
+        };
+
+        function formatter(value, settings) {
+            return value.toFixed(settings.decimals);
+        }
+    }(jQuery));
+
+    jQuery(function ($) {
+        // custom formatting example
+        $('.count-number').data('countToOptions', {
+            formatter: function (value, options) {
+                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+            }
+        });
+
+        // start all the timers
+        $('.timer').each(count);
+
+        function count(options) {
+            var $this = $(this);
+            options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+            $this.countTo(options);
+        }
+    });
+</script>
+
+</body>
+
+</html>
